@@ -1,0 +1,12 @@
+{
+  "name": "url_to_kindle",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "html-pdf": "^2.2.0",
+    "jsdom": "^16.3.0",
+    "nodemailer": "^6.4.11"
+  }
+}
