@@ -51,19 +51,17 @@ JSDOM.fromURL(url).then(dom => {
             });
 
             console.info(`Sending (${title}.pdf) to (${process.env.KINDLE_EMAIL})`);
-            // const info = await transporter.sendMail({
-            //     from: process.env.SENDER_ADDRESS,
-            //     to: process.env.KINDLE_EMAIL,
-            //     subject: `Sending ${title}.pdf`,
-            //     text: `Attached, ${title}.pdf`,
-            //     attachments: [
-            //         {
-            //             path: filename
-            //         }
-            //     ]
-            // }).catch(console.error);
-
-            const info = {messageId: 'lero'};
+            const info = await transporter.sendMail({
+                from: process.env.SENDER_ADDRESS,
+                to: process.env.KINDLE_EMAIL,
+                subject: `Sending ${title}.pdf`,
+                text: `Attached, ${title}.pdf`,
+                attachments: [
+                    {
+                        path: filename
+                    }
+                ]
+            }).catch(console.error);
               
             console.log(`File sent: ${info.messageId}`);
         });

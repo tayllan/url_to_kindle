@@ -10,6 +10,16 @@ Send web pages as readable PDFs to your Kindle
 4. Install the dependencies `yarn install`
 5. Run `node index.js ${url}`, passing the url
 
+### Example
+
+```sh
+$ node main.js https://waitbutwhy.com/2019/08/giants.html
+Downloading (https://waitbutwhy.com/2019/08/giants.html)
+Saving (./tmp/A Game of Giants — Wait But Why.pdf)
+Sending (A Game of Giants — Wait But Why.pdf) to (**KINDLE_EMAIL**)
+File sent: <**messageId**>
+```
+
 Notes:
 
 1. The `SENDER_ADDRESS` email needs to be whitelisted in the Amazon Settings
