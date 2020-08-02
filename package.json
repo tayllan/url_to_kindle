@@ -7,6 +7,7 @@
     "dotenv": "^8.2.0",
     "html-pdf": "^2.2.0",
     "jsdom": "^16.3.0",
-    "nodemailer": "^6.4.11"
+    "nodemailer": "^6.4.11",
+    "yargs": "^15.4.1"
   }
 }
