@@ -2,7 +2,7 @@
 
 Send web pages as readable PDFs to your Kindle
 
-You can also just download web pages as readable PDFs, or sent existing files to your Kindle
+You can also just download web pages as readable PDFs, or send existing files to your Kindle
 
 ## How to
 
@@ -11,9 +11,8 @@ You can also just download web pages as readable PDFs, or sent existing files to
 3. Install dependencies with `yarn install`
 4. Pick a URL of your choice, or an existing file, something awesome you've been wanting to read
 5. Run
-
-  1. `./index.js --url <url>`, to send the URL as a PDF to your Kindle, or
-  2. `./index.js --file <filepath>`, to send an existing file to your Kindle
+    1. `./index.js --url <url>`, to send the URL as a PDF to your Kindle, or
+    2. `./index.js --file <filepath>`, to send an existing file to your Kindle
 
 ### Example
 
