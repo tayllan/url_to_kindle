@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 pdf_to_kindle = (filepath, emailConfig) => {
     if (!filepath) {
-        return new Promise((resolve, reject) => reject(false));
+        return false;
     }
 
     const filename = filepath.split('/').pop();    
