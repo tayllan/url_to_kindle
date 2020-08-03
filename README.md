@@ -2,22 +2,34 @@
 
 Send web pages as readable PDFs to your Kindle
 
+You can also just download web pages as readable PDFs, or sent existing files to your Kindle
+
 ## How to
 
 1. Copy `.env.example` to `.env`
 2. Add your credentials to `.env`
-3. Pick a URL of your choice, an awesome post you've been wanting to read
-4. Install the dependencies `yarn install`
-5. Run `node index.js ${url}`, passing the url
+3. Install dependencies with `yarn install`
+4. Pick a URL of your choice, or an existing file, something awesome you've been wanting to read
+5. Run
+
+  1. `./index.js --url <url>`, to send the URL as a PDF to your Kindle, or
+  2. `./index.js --file <filepath>`, to send an existing file to your Kindle
 
 ### Example
 
 ```sh
-$ node main.js https://waitbutwhy.com/2019/08/giants.html
-Downloading (https://waitbutwhy.com/2019/08/giants.html)
-Saving (./tmp/A Game of Giants — Wait But Why.pdf)
-Sending (A Game of Giants — Wait But Why.pdf) to (**KINDLE_EMAIL**)
-File sent: <**messageId**>
+$ ./index.js
+Usage: index.js --url [url] --local --file [filepath]
+
+Options:
+    --url           URL to be downloaded into a readable PDF file
+    --local         If set, the downloaded PDF file will NOT be sent to your Kindle
+    --file          Filepath to an existing file to send to your Kindle
+    
+Examples:
+    ./index.js --url https://waitbutwhy.com/2019/08/story-intro.html
+    ./index.js --url https://waitbutwhy.com/2019/08/story-intro.html --local
+    ./index.js --file ./tmp/existing_file.pdf
 ```
 
 Notes:

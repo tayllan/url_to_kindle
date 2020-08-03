@@ -12,7 +12,7 @@ get_options = () => {
             'Options:\n' +
             '\t --url   \t URL to be downloaded into a readable PDF file\n' +
             '\t --local \t If set, the downloaded PDF file will NOT be sent to your Kindle\n' +
-            '\t --file  \t Filepath to an existing PDF file to send to your Kindlw\n' +
+            '\t --file  \t Filepath to an existing file to send to your Kindle\n' +
             '\n' +
             'Examples:\n' +
             '\t ./index.js --url https://waitbutwhy.com/2019/08/story-intro.html\n' +
